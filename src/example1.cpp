@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include <qpOASES.hpp>
 #include <Eigen/Dense>
 
@@ -9,9 +8,6 @@ using namespace qpOASES;
 typedef Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor> RowMajMat;
 
 
-
-
-/** Example for qpOASES main function using the QProblem class. */
 int main()
 {
 	Eigen::Matrix<double, 2, 2> H_;
@@ -28,10 +24,6 @@ int main()
 	g_ << 1.5, 1.0;
 	lb_ << 0.5, -2.0;
 	ub_ << 5.0, 2.0;
-
-	// Solution
-	vector<double> sol = {0, 0}; 
-
 	
 	/* Setup data of first QP. */
 	real_t H[2*2];
