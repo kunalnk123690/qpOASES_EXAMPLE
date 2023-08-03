@@ -3,7 +3,7 @@ project(qpoasesExample)
 
 find_package(Eigen3 REQUIRED)
 
-include_directories(include)
+include_directories( include )
 include_directories( include/qpOASES )
 include_directories( include/qpOASES/extras )
 
