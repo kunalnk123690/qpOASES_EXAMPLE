@@ -25,7 +25,7 @@ int main()
 	lb_ << 0.5, -2.0;
 	ub_ << 5.0, 2.0;
 	
-	/* Setup data of first QP. */
+	/* Setup data of the QP. */
 	real_t H[2*2];
 	real_t A[1*2];
 	real_t g[2];
